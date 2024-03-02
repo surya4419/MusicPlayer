@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', san-serif;
+    box-sizing: border-box  ;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(198, 192, 206) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.music-player{
+    background: #9290C3;
+    width: 350px;
+    padding: 25px 35px;
+    text-align: center;
+    box-shadow: 3px 5px 10px 2px rgb(42, 45, 46) ;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #1B1A55;
+    box-shadow: 0px 5px 4px 0px rgb(42, 45, 46) ;
+}
+
+
+.song-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    box-shadow: 0px 5px 4px 0px rgb(42, 45, 46) ;
+}
+.music-player h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: #1B1A55;
+    margin-top: 20px;
+}
+.music-player p{
+    font-size: 14px;
+    color: #1B1A55;
+    font-weight: 600;
+}
+
+.like i {
+    position: relative;
+    left: 120px;
+    bottom: 32px;
+    color: white;
+    font-size: 25px;
+    
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    top: 15px;
+}
+#progress{
+    -webkit-appearance: none;
+    width: 90%;
+    height: 6px;
+    background: #1B1A55;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 0 10px;
+    
+}
+#progress::-webkit-slider-thumb{
+     -webkit-appearance: none;
+     background: #1B1A55;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border: 4px solid #fff;
+     box-shadow: 0px 5px 4px 0px rgb(42, 45, 46) ;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.control div{
+    display: flex;
+    
+}
+.control i{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #1B1A55;
+    box-shadow: 0px 5px 4px 0px rgb(42, 45, 46) ;}
+
+#play-icon{
+    transform: scale(1.2);
+    background:#1B1A55;
+    color: #fff;
+}
+
+.message{
+    position: relative;
+    bottom: 30px;
+    background-color: #1B1A55;
+    height: 30px;
+    width: 200px;
+   padding: 4px 5px 2px 13px;
+   font-weight: 500;
+   border-radius: 20px;
+   color: white;
+   visibility: hidden;
+}
