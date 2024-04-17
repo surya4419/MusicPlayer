@@ -1,4 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="musicPlayer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container ">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+        <i class="fa-solid fa-bars"></i> 
+        </div>
+      </nav>
+      <div >
+       <img src="songsInfo/Inkem Inkem.jpg" alt="" class="song-img" >
+      </div>
+      <h1 class="song-name" >Inkem Inkem  </h1>
+      <p class="movie-name" >Sid Sriram</p>
+      <span class="like"><i id="like-icon" class="fa-solid fa-heart"></i></span>
+      <div class="time" >
+        <span class="song-time" >0:00</span>
+        <span id="hide" class="message">removed from liked songs</span>
+        <span class="song-lefttime" >0:00</span>
+      </div>
+      <br>
+      <audio  id="audio">
+        <source  src="songsInfo/Inkem Inkem.mpeg" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress" >
 
+      <div class="control">
+        <div ><i id="previous" class="fa-solid fa-backward-step"></i><div>
+        <div ><i id="play-icon" class="fa-solid fa-play"></i></div>
+        <div ></i><i id="next" class="fa-solid fa-forward-step"></i></div>
+      </div>
+        
+    </div>
+  </div>
+  <script src="musicPlayer.js"></script>
+</body>
+</html>
       
     
         
